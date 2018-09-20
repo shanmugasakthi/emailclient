@@ -1,0 +1,50 @@
+package com.kg.emailclient;
+
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+public class UserController extends HttpServlet {
+
+    // public  ArrayList<User> users = new ArrayList<User>();
+    public List<User> users = Arrays.asList(
+        new User(1, "email", "password"), 
+        new User(2, "email2", "password2"),
+        new User(3, "email3", "password3"));
+
+    @Override
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        System.out.println("UserController doGet called");
+    }
+
+  User getUser(String email) {
+      System.out.println("user list"+users);
+        System.out.println("email  "+email);
+        User exuser=new User();
+        // boolean validuser = false;
+        for (User user : users) {
+            if (user.getEmail().equals(email)) {
+                System.out.println(email);
+                System.out.println("if user.getEmail()= "+user.getEmail());
+                exuser=user;
+                return exuser;
+            //    break;
+
+            } else {
+                
+                System.out.println("else user.getEmail()= "+user.getEmail());
+                // validuser = false;
+                System.out.println("else part ");
+                continue;
+            }
+        }
+    return null;
+    }
+
+}
