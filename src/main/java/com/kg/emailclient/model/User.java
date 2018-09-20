@@ -1,67 +1,59 @@
-package com.kg.emailclient;
+package com.kg.emailclient.model;
 
 /**
- * Contact
+ * User
  */
-public class Contact {
+public class User {
 
     private int userid;
     private String email;
-    private String phone;
+    private String password;
 
-    Contact() {
+    public User(){}
+    public User(int userid,String email,String password){
+        this.userid=userid;
+        this.email=email;
+        this.password=password;
     }
-
-    Contact(int userid, String email, String phone) {
-        this.userid = userid;
-        this.email = email;
-        this.phone = phone;
-    }
-
     /**
      * @return the userid
      */
     public int getUserid() {
         return userid;
     }
-
     /**
      * @param userid the userid to set
      */
     public void setUserid(int userid) {
         this.userid = userid;
     }
-
     /**
      * @return the email
      */
     public String getEmail() {
         return email;
     }
-
     /**
      * @param email the email to set
      */
     public void setEmail(String email) {
         this.email = email;
     }
-
     /**
-     * @return the phone
+     * @return the password
      */
-    public String getPhone() {
-        return phone;
+    public String getPassword() {
+        return password;
     }
-
     /**
-     * @param phone the phone to set
+     * @param password the password to set
      */
-    public void setPhone(String phone) {
-        this.phone = phone;
+    public void setPassword(String password) {
+        this.password = password;
     }
 
     @Override
     public String toString() {
-        return "userid:"+userid + ", email:"+email + ", phone:"+phone;
+        return "userid: "+userid+", email: "+email+", password: "+password;
     }
 }

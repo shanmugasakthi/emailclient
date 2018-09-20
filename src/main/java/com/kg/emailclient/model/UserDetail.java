@@ -1,4 +1,4 @@
-package com.kg.emailclient;
+package com.kg.emailclient.model;
 
 import java.util.List;
 
@@ -11,10 +11,10 @@ public class UserDetail {
     private List<Inbox> inboxes;
     private List<Contact> contacts;
 
-    UserDetail() {
+    public UserDetail() {
     }
 
-    UserDetail(int userid, List<Inbox> inboxes, List<Contact> contacts) {
+    public UserDetail(int userid, List<Inbox> inboxes, List<Contact> contacts) {
         this.userid = userid;
         this.setInboxes(inboxes);
         this.contacts = contacts;

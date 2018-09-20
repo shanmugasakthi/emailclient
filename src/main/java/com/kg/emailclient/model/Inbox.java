@@ -1,4 +1,4 @@
-package com.kg.emailclient;
+package com.kg.emailclient.model;
 
 /**
  * Inbox
@@ -12,10 +12,10 @@ public class Inbox {
     private String subject;
     private String message;
 
-    Inbox() {
+    public Inbox() {
     }
 
-    Inbox(int userid, String date, String from, String to, String subject, String message) {
+    public Inbox(int userid, String date, String from, String to, String subject, String message) {
         this.userid = userid;
         this.date = date;
         this.from = from;

@@ -1,4 +1,4 @@
-package com.kg.emailclient;
+package com.kg.emailclient.controller;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -11,6 +11,11 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
+import com.kg.emailclient.model.Contact;
+import com.kg.emailclient.model.Inbox;
+import com.kg.emailclient.model.User;
+import com.kg.emailclient.model.UserDetail;
 
 @WebServlet("/UserDetailController")
 public class UserDetailController extends HttpServlet {
