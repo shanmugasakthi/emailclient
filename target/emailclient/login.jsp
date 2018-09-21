@@ -89,6 +89,7 @@
         </div>
     </form>
 
-    <a href="/ContactController?action=">click here</a>
+    <a href="/ContactController?action=">Contacts</a>
+    <p><a href="InboxController?action=insert">Add User</a></p>
 </body>
 </html>

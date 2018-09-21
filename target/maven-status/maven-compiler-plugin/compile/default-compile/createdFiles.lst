@@ -3,6 +3,7 @@ com\kg\emailclient\model\User.class
 com\kg\emailclient\controller\UserController.class
 com\kg\emailclient\controller\ContactController.class
 com\kg\emailclient\controller\UserDetailController.class
+com\kg\emailclient\controller\InboxController.class
 com\kg\emailclient\controller\LoginServlet.class
 com\kg\emailclient\model\Contact.class
 com\kg\emailclient\model\UserDetail.class
