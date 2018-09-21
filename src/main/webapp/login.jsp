@@ -89,6 +89,6 @@
         </div>
     </form>
 
-    <a href="/crudoperations">click here</a>
+    <a href="/ContactController?action=">Contacts</a>
 </body>
 </html>
